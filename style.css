@@ -1,0 +1,381 @@
+margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+
+body{
+    background:#f5f5f5;
+    color:#222;
+    transition:0.4s;
+}
+
+
+
+/* Header */
+
+header{
+    background:#111;
+    color:white;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+
+.logo{
+    font-size:28px;
+}
+
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+}
+
+
+nav ul li a:hover{
+    color:#00adb5;
+}
+
+
+
+#darkMode{
+
+    border:none;
+    padding:8px 12px;
+    cursor:pointer;
+    border-radius:50%;
+    font-size:18px;
+
+}
+
+
+
+/* Home */
+
+
+#home{
+
+    min-height:100vh;
+    background:linear-gradient(
+    135deg,#111,#393e46);
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+
+.home-content{
+
+    animation:fade 1.5s;
+
+}
+
+
+.profile{
+
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+}
+
+
+
+.home-content h1{
+
+    font-size:45px;
+    margin:20px;
+
+}
+
+
+.home-content h2{
+
+    color:#00adb5;
+
+}
+
+
+.home-content p{
+
+    max-width:600px;
+    margin:20px auto;
+    line-height:1.6;
+
+}
+
+
+
+
+button{
+
+    padding:12px 25px;
+    margin:10px;
+
+    border:none;
+    border-radius:25px;
+
+    background:#00adb5;
+    color:white;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* Sections */
+
+
+section{
+
+    padding:90px 8%;
+    text-align:center;
+
+}
+
+
+section h2{
+
+    font-size:35px;
+    margin-bottom:30px;
+
+}
+
+
+
+/* Cards */
+
+
+.cards{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    width:300px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px #ccc;
+
+    transition:0.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card a{
+
+    color:#00adb5;
+    text-decoration:none;
+
+}
+
+
+
+
+/* Education */
+
+
+.education-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px #ccc;
+
+}
+
+
+
+/* Contact */
+
+
+#contact p{
+
+    margin:15px;
+
+    font-size:18px;
+
+}
+
+
+
+/* Footer */
+
+
+footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+
+/* Dark Mode */
+
+
+.dark{
+
+    background:#121212;
+    color:white;
+
+}
+
+
+.dark .card,
+.dark .education-box{
+
+    background:#222;
+    color:white;
+
+}
+
+
+
+.dark header{
+
+    background:#000;
+
+}
+
+
+
+/* Animation */
+
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+nav{
+
+flex-direction:column;
+
+}
+
+
+nav ul{
+
+margin-top:15px;
+
+flex-direction:column;
+
+}
+
+
+.home-content h1{
+
+font-size:32px;
+
+}
+
+
+.cards{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+
+}
